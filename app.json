@@ -1,0 +1,17 @@
+{
+  "name": "Spina CMS Heroku",
+  "description": "Spina CMS",
+  "logo": "http://www.spinacms.com/assets/spinacms/logo-8e138f8128a0a295e62263d32e45940d.png",
+  "repository": "https://github.com/nakamuraagatha/spinacms.git",
+  "success_url": "/",
+  "addons": [
+    "heroku-postgresql"
+  ],
+  "env": {
+    "PGSSLMODE": {
+      "description": "PostgreSQL SSL connection mode. Set to 'require' to force SSL. Unset it to use the default.",
+      "required": false,
+      "value": "require"
+    }
+  }
+}
